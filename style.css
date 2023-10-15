@@ -4,8 +4,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #0a0908;
+    --secondary: #49111c;
+    --font-color: #f2f4f3;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--font-color);
+}
+
 
 .container {
     max-width: 90vw;
-    
+    padding-inline: 100px;
+    display: flex;
+}
+
+.logo-img {
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
