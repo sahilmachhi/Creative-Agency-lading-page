@@ -77,4 +77,9 @@ a {
     font-size: 1rem;
 }
 
-
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
