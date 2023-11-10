@@ -11,9 +11,11 @@
     --secondary: #49111c;
     --font-color: #f2f4f3;
 }
+
 html {
  scroll-behavior: smooth;
 }
+
 body {
     background-color: var(--primary);
     color: var(--font-color);
