@@ -80,23 +80,34 @@ a {
     font-size: 1rem;
 }
 
-.hero-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-
 .hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 95vh;
-    background-color: #49111c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
 }
 
-.hero-image-container {
-    width: 50%;
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+.hero-content, .hero-image-container {
+    align-self: center;
+    justify-self: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.about-container {
+ display: grid;
+ grid-template-rows: 10vh 80vh;
+ text-align: center;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    justify-self: center;
 }
