@@ -1,5 +1,7 @@
 /* global css */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@100;300;500;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +9,11 @@
 }
 
 :root {
-    --primary: #0a0908;
-    --secondary: #49111c;
-    --font-color: #f2f4f3;
+    --primary: #F3F3F3;
+    --secondary: #29ADB2;
+    --font-color: #0766AD;
+    --title-font: 'Open Sans', sans-serif;
+    --p-font: 'Roboto Condensed', sans-serif;
 }
 
 html {
@@ -18,7 +22,6 @@ html {
 
 body {
     background-color: var(--primary);
-    color: var(--font-color);
 }
 
 .container {
@@ -48,7 +51,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
 }
 
 .nav-list {
@@ -57,6 +59,12 @@ a {
     align-items: center;
     flex-direction: row;
     gap: 1rem;
+}
+
+.list-item a{
+    font-size: 1.2rem;
+    font-family: var(--title-font);
+    color: var(--font-color);
 }
 
 .logo-section {
@@ -80,10 +88,61 @@ a {
     font-size: 1rem;
 }
 
-.hero-container {
+/* hero css */
+
+.hero-container , .about-details{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+}
+
+.hero-container {
     height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: var(--font-color);
+}
+
+.hero-content h1{
+    font-size: 2.6rem;
+    font-family: var(--title-font);
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+    font-weight: 300;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: var(--p-font);
+    height: 50px;
+    width: 100px;
+    padding: 10px 5px;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+    box-shadow: none;
+    transition: 300ms ease-in;
+}
+
+.btn:hover {
+    background-color: var(--font-color);
+    border-radius: 15px;
+    font: 700;
+    color: var(--primary);
+}
+
+.hero-image-container img {
+    border-radius: 50px;
 }
 
 .about-container {
@@ -95,19 +154,18 @@ a {
     justify-self: center;
 }
 
-.hero-content {
-    text-align: center;
-}
+
 
 .about-container {
  display: grid;
- grid-template-rows: 10vh 80vh;
+ /* grid-template-rows: 10vh 80vh; */
  text-align: center;
 }
 
 .features {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     align-self: center;
     justify-self: center;
 }
+
