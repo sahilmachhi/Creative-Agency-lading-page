@@ -61,7 +61,7 @@ a {
     gap: 1rem;
 }
 
-.list-item a{
+.list-item a {
     font-size: 1.2rem;
     font-family: var(--title-font);
     color: var(--font-color);
@@ -90,7 +90,7 @@ a {
 
 /* hero css */
 
-.hero-container , .about-details{
+.hero-container , .about-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10vw;
@@ -106,13 +106,13 @@ a {
     align-items: center;
     text-align: center;
     gap: 20px;
-    color: var(--font-color);
 }
 
-.hero-content h1{
+.hero-content h1 {
     font-size: 2.6rem;
     font-family: var(--title-font);
     font-weight: 800;
+    color: var(--font-color);
 }
 
 .hero-content p {
@@ -145,15 +145,19 @@ a {
     border-radius: 50px;
 }
 
+
+/* about section  */
+
+
 .about-container {
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
 }
 .hero-content, .hero-image-container {
     align-self: center;
     justify-self: center;
 }
-
 
 
 .about-container {
@@ -167,5 +171,62 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     align-self: center;
     justify-self: center;
+    gap: 1.2rem;
+    
 }
 
+
+.about-heading-title h5 {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-family: var(--title-font);
+}
+
+.about-heading-title h2 {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    font-weight: 700;
+    
+}
+
+.feature {
+    border: 1px solid var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 10px;
+    gap: 0.8rem;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+    font-family: var(--title-font);
+    font-weight: 700;
+}
+
+.feature p {
+    font-size: 1.0rem;
+    font-family: var(--p-font);
+    font-weight: 300;
+}
+
+.about-details {
+    height: 60vh;
+    align-items: center;
+}
+
+.about-detail-content h1 {
+    font-size: 2.6rem;
+    font-family: var(--title-font);
+    font-weight: 800;
+    color: #0766AD;
+}
+
+.about-detail-content p {
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+    font-weight: 300;
+}
