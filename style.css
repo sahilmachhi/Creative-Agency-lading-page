@@ -230,3 +230,40 @@ a {
     font-family: var(--p-font);
     font-weight: 300;
 }
+
+.about-detail-image img {
+    border-radius: 15px;
+}
+
+/* service section  */
+
+.services-container {
+    display: grid;
+}
+
+.service-content {
+    text-align: end;
+}
+
+.service-content h5 {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-family: var(--title-font);
+}
+
+.service-content h2 {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    font-weight: 700;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+}
+
+.service {
+    border: 1px solid black;
+    padding: 2rem;
+}
