@@ -289,3 +289,44 @@ a {
 section {
     margin: 100px 0px;
 }
+
+
+/* projects section  */
+
+
+.projects-container {
+    background: url(images/imagecompressor/v880-kul-11-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+.project-content h5 {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-family: var(--title-font);
+}
+
+.project-content h2 {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    font-weight: 700; 
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-content h5 {
+    font-size: 1.2rem;
+    font-family: var(--title-font);
+    font-weight: 700; 
+}
+
+.project-content h2 {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    font-weight: 700; 
+}
