@@ -27,8 +27,7 @@ body {
 .container {
     max-width: 1220px;
     width: 100%;
-    margin-inline: 4rem;
-    /* display: flex; */
+    margin: 100px auto;
 }
 
 ul {
@@ -52,6 +51,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -79,14 +79,8 @@ a {
     position: sticky;
 }
 
-
-.navbar-btn button {
-    background-color: rgba(255, 0, 0, 0);
-    border: 1px solid var(--font-color);
-    border-radius: 7px;
-    padding: 10px 10px;
-    color: var(--font-color);
-    font-size: 1rem;
+.navbar-button {
+    font-weight: 900;
 }
 
 /* hero css */
@@ -287,7 +281,7 @@ a {
 }
 
 section {
-    margin: 100px 0px;
+    margin: 100px;
 }
 
 
@@ -300,23 +294,41 @@ section {
     background-position: center;
     background-size: 100vw 100vh;
     background-attachment: fixed;
+    margin: 0;
 }
 
-.project-content h5 {
+.project-contents h5 {
     font-size: 1.5rem;
     color: var(--font-color);
     font-family: var(--title-font);
 }
 
-.project-content h2 {
+.project-contents h2 {
     font-size: 3rem;
     font-family: var(--title-font);
     font-weight: 700; 
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project:nth-child(2) .project-img{
+    grid-area: 1/2;
+    align-self: right;
+}
+
+.project:nth-child(2) .project-content{
+    grid-area: 0/1;
+    
+}
+
 .project {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .project-content h5 {
@@ -329,4 +341,70 @@ section {
     font-size: 3rem;
     font-family: var(--title-font);
     font-weight: 700; 
+}
+
+.project-content p {
+    font-family: var(--p-font);
+    font-size: 1rem;
+}
+
+.project-content {
+    text-align: start;
+    gap: 0.8rem;
+    display: grid;
+}
+
+.project-contents {
+    gap: 1rem;
+    display: grid;
+}
+
+.project-heading {
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+    flex-direction: column;
+}
+
+/* contact section  */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-content h5 {
+    font-size: 1.2rem;
+    font-family: var(--title-font);
+    font-weight: 700; 
+}
+
+.contact-content h2 {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    font-weight: 700; 
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
