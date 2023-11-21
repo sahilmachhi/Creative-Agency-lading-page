@@ -12,8 +12,8 @@
     --primary: #F3F3F3;
     --secondary: #29ADB2;
     --font-color: #0766AD;
-    --title-font: 'Open Sans', sans-serif;
-    --p-font: 'Roboto Condensed', sans-serif;
+    --title-font: 'Roboto Condensed', sans-serif;
+    --p-font: 'Open Sans', sans-serif;
 }
 
 html {
@@ -25,9 +25,10 @@ body {
 }
 
 .container {
-    max-width: 90rem;
+    max-width: 1220px;
+    width: 100%;
     margin-inline: 4rem;
-    display: flex;
+    /* display: flex; */
 }
 
 ul {
@@ -97,7 +98,7 @@ a {
 }
 
 .hero-container {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .hero-content {
@@ -118,7 +119,7 @@ a {
 .hero-content p {
     font-size: 1.2rem;
     font-family: var(--p-font);
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .btn {
@@ -162,7 +163,6 @@ a {
 
 .about-container {
  display: grid;
- /* grid-template-rows: 10vh 80vh; */
  text-align: center;
 }
 
@@ -172,7 +172,7 @@ a {
     align-self: center;
     justify-self: center;
     gap: 1.2rem;
-    
+
 }
 
 
@@ -210,7 +210,7 @@ a {
 .feature p {
     font-size: 1.0rem;
     font-family: var(--p-font);
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .about-details {
@@ -228,7 +228,7 @@ a {
 .about-detail-content p {
     font-size: 1.2rem;
     font-family: var(--p-font);
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .about-detail-image img {
@@ -239,6 +239,7 @@ a {
 
 .services-container {
     display: grid;
+    gap: 2rem;
 }
 
 .service-content {
@@ -266,4 +267,25 @@ a {
 .service {
     border: 1px solid black;
     padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.service h3 {
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.service p {
+    font-family: var(--p-font);
+    font-size: 1rem;    
+}
+
+section {
+    margin: 100px 0px;
 }
