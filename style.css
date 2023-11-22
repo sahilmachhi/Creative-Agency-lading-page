@@ -259,7 +259,7 @@ a {
 }
 
 .service {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 2rem;
     align-items: center;
     justify-content: center;
@@ -267,6 +267,12 @@ a {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    transition: 100ms;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.service:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .service h3 {
@@ -371,6 +377,7 @@ section {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .contact-form {
@@ -378,7 +385,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    align-self: flex-start;
 }
 
 .contact {
@@ -386,13 +393,14 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .contact-content h5 {
     font-size: 1.2rem;
     font-family: var(--title-font);
-    font-weight: 700; 
+    font-weight: 700;
+    color: var(--font-color); 
 }
 
 .contact-content h2 {
@@ -406,5 +414,55 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+}
+
+.contact-form input, .contact-form textarea {
+    width: 30vw;
+    height: 8vh;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgb(255, 255, 255);
+}
+
+.contact-form input, .contact-form textarea, .contact-form .btn {
+    margin: 10px 0px;
+}
+
+.contact-form h1 {
+    font-size: 1.8rem;
+    font-family: var(--title-font);
+    color: var(--font-color);
+    align-self: flex-start;
+    font-weight: 900;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.detail-content h3 {
+    font-size: 1.4rem;
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: var(--font-color);
+}
+
+.detail-content p {
+    font-family: var(--p-font);
+    font-size: 1rem;
+}
+
+.contact-details {
+    margin: 2rem 0;
+}
+
+.contact-details .text {
+    font-size: 1.4rem;
+    font-family: var(--title-font);
+    font-weight: 700;
 }
