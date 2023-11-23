@@ -94,7 +94,14 @@ a {
 .hero-container {
     /* height: 100vh; */
 }
+.hero-image-container{
+    max-width: 40vw;
+    width: 700px;
+}
 
+.hero-image-container img {
+    width: 100%;
+}
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -295,7 +302,7 @@ section {
 
 
 .projects-container {
-    background: url(images/imagecompressor/v880-kul-11-min.jpg);
+    background: url(images/v880-kul-11.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vw 100vh;
