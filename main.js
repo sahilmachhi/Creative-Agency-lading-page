@@ -1,24 +1,33 @@
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.from ('.list-item, .logo-section, .navbar-btn', {
-    duration: 0.8,
-    y: '-100',
-    
-    ease: "power2.out",
-    stagger: 0.2,
-});
+// var tl = gsap.timeline();
 
-gsap.from ('.hero-content, .about-heading-title, .about-detail-content, .project-heading, .project-img, .contact-content, .contact', {
+// tl.from ('.logo-section, .list-item,  .navbar-btn', {
+//     duration: 0.6,
+//     delay:0.5,
+//     translateX : "-10px",
+//     ease: "power2.out",
+//     stagger: 0.05,
+//     opacity:0,
+// });
+
+gsap.from ('.detail', {
     duration: 2.8,
     x: '-1000',
-    ease: "power2.out",
-    stagger: 0.2,
-    scrollTrigger: ".hero-content, .about-heading-title, .contact-content",
+    // ease: "power2.out",
+    // stagger: 0.2,
+    ScrollTrigger: {
+        trigger:'.detail',
+        markers:true,
+        scroller:"body",
+        // start:"top 70%",
+        // end:"bottom 90%"
+    }
 });
 
-gsap.from ('.project-content', {
-    duration: 2.8,
-    x: '100',
-    ease: "power2.out",
-    // stagger: 0.2,
-});
+// tl.from ('.project-content', {
+//     duration: 2.8,
+//     x: '100',
+//     ease: "power2.out",
+//     stagger: 0.2,
+// });
