@@ -1,22 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let servicesList = document.querySelectorAll('.services');
-
-for (let i = 0; i < servicesList.length; i++) {
-    gsap.from(".servicesList[i]", {
-        y: '100',
-        duration: 2.0,
-        // opacity:0,
-        // stagger: 0.3,
-        scrollTrigger: {
-            trigger: ".services",
-            start: "top center",
-            end: "bottom center",
-            markers: true,
-        },
-    });
-};
-
 gsap.from ('.logo-section, .list-item,  .navbar-btn', {
     duration: 0.6,
     delay: 0.5,
@@ -42,4 +25,49 @@ gsap.from ('.hero-image-container', {
     opacity:0,
     stagger: 0,
     delay:1.0,
+});
+
+let left = gsap.utils.toArray(".left");
+console.log(left);
+left.forEach(left => {
+    gsap.from(left,{
+        x:"100",
+        opacity: 0,
+        duration:1.0,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger : left,
+            // markers: true,
+            start: "center 90%",
+        }})
+});
+
+let right = gsap.utils.toArray(".right");
+console.log(right);
+right.forEach(right => {
+    gsap.from(right,{
+        x:"-100",
+        opacity: 0,
+        duration:1.0,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger : right,
+            // markers: true,
+            start: "center 90%",
+        }})
+});
+
+let topIn = gsap.utils.toArray(".top");
+console.log(topIn);
+topIn.forEach(topIn => {
+    gsap.from(topIn,{
+        y:"-100",
+        opacity: 0,
+        duration:1.0,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger : topIn,
+            // markers: true,
+            start: "center 90%",
+        }})
 });
